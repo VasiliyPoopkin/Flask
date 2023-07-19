@@ -1,4 +1,4 @@
-import random
+dimport random
 from flask import request, redirect, abort
 
 
@@ -10,7 +10,7 @@ def get_users():
     names = ['John', 'Jane', 'Alex', 'Emily', 'Michael', 'Olivia']
     random_names = random.sample(names, random.randint(1, len(names)))
     app.logger.info('Accessed /users endpoint.')
-    return ', '.join(random_names)
+    return ', '.join(random_names)git remote add origin https://github.com/VasiliyPoopkin/Flask.git
 
 @app.route('/books')
 def get_books():
